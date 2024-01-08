@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".AddActivity"
+    android:padding="30dp">
+
+    <!-- Replace EditText for Month with Spinner -->
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_select_month" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerMonth"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_year"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etConsumptionValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etYear"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_consumption_value"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnAddConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etConsumptionValue"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_add_consumption" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+  <TextView
+      android:id="@+id/tvMonth"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Month: "
+      android:layout_marginTop="16dp"
+      android:layout_marginStart="16dp" />
+
+  <TextView
+      android:id="@+id/tvYear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Year: "
+      android:layout_below="@id/tvMonth"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="16dp" />
+
+  <TextView
+      android:id="@+id/tvVolume"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Volume: "
+      android:layout_below="@id/tvYear"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="16dp" />
+
+  <TextView
+      android:id="@+id/tvAmount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Amount: "
+      android:layout_below="@id/tvVolume"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="16dp" />
+
+  <Button
+      android:id="@+id/btnUpdate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Update"
+      android:layout_below="@id/tvAmount"
+      android:layout_marginTop="16dp"
+      android:layout_marginStart="16dp" />
+
+  <Button
+      android:id="@+id/btnDelete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Delete"
+      android:layout_below="@id/tvAmount"
+      android:layout_marginTop="16dp"
+      android:layout_toEndOf="@id/btnUpdate"
+      android:layout_marginStart="16dp" />
+
+</RelativeLayout>

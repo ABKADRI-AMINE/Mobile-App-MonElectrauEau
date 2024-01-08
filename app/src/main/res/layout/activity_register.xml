@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/fname"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lname"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Numéro de télephone"
+        android:layout_below="@id/email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/phone"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmez votre mot de passe"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'inscrire"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/repassword"
+        />
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous avez déjà un compte ?"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnsignup"
+        />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se Connecter"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tx"
+        />
+</RelativeLayout>

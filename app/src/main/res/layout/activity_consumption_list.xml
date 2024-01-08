@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsumptionListActivity">
+
+    <!-- Updated LinearLayout with two child views -->
+    <LinearLayout
+        android:id="@+id/linearHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:prompt="@string/select_year" />
+
+        <!-- Add this button to your layout -->
+        <Button
+            android:id="@+id/btnCompareChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compare Chart"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewConsumptions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearHeader"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>

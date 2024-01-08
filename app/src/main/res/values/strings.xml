@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MonElectroEau</string>
+    <string name="fab_content_description">Add Item</string>
+    <string name="hint_select_month">Select Month</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_consumption_value">Consumption Value (m^2)</string>
+    <string name="btn_add_consumption">Add Water Consumption</string>
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="select_year">Select Year</string>
+    <string-array name="years_array">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <!-- Add more years as needed -->
+    </string-array>
+
+    <!-- res/values/strings.xml -->
+    <string name="empty_state_description">Empty State</string>
+    <string name="empty_state_message">No data available</string>
+</resources>
